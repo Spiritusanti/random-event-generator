@@ -21,6 +21,15 @@ body {
   height: 100%;
 }
 
+.w3-card {
+  width: 100%;
+}
+
+.w3-tag {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 #spacer {
   width: 100%;
   height: 25%;
