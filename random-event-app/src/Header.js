@@ -19,7 +19,8 @@ class Header extends Component {
 
     render() {
         return (
-            <div class="ui top fixed menu">
+            <div class="ui top fixed borderless menu">
+              <a class="huge header item" href="/">Seattle Kids</a>
                 <div class="right menu">
                     <a class="item">Sign Up</a>
                     <a class="item">Help</a>

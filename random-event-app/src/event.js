@@ -46,30 +46,33 @@ class Event extends Component {
                         <div class="ui dividing left aligned huge header">{this.state.eventName}</div>
                         <div class="meta">
                             Location: {this.state.eventLocation}
-                            <br/>
+                            <br />
                             Date: {this.state.eventDate}
                         </div>
                         <div class="ui left aligned description">
                             <div class="ui horizontal list">
                                 <div class="item">Tags: </div>
                                 <div class="item">
-                            <div class="ui blue labels">
-                                {this.state.tags.map((answer, i) => {
-                                console.log("Entered");
-                                return <a className="ui label">{answer}</a>
+                                    <div class="ui blue labels">
+                                        {this.state.tags.map((answer, i) => {
+                                            console.log("Entered");
+                                            return <a className="ui label">{answer}</a>
 
-                                })}
+                                        })}
 
-                            </div>
-                            </div>
+                                    </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="extra content">
-                        <div class="ui two buttons">
-                            <button class="ui basic green button" >Join</button>
-                            <button class="ui basic red button" onClick={this.props.handler}>Find Another</button>
+                    <div class="ui centered extra content">
+                    <span class="right floated">
+                        <div className="ui buttons">
+                            <button className="ui purple button" onClick={this.props.handler}>Find Another Event</button>
+                            <div class="or"></div>
+                            <a className="ui positive button" href="/joined">Join Event!</a>
                         </div>
+                        </span>
                     </div>
                 </div>
             </div>

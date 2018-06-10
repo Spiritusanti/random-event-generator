@@ -3,15 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 
-class ConfirmPage extends Component {
+class FinalJoinPage extends Component {
   render() {
   
     return (
       <div className="App">
-      <Header />
+        <Header />
         <div class="ui container">
           <div id='spacer' />
-          <h1>Event Added!</h1>
+          <h1>Event Joined!</h1>
           <a href='/'>Return to Home</a>
         </div>
       </div>
@@ -19,4 +19,4 @@ class ConfirmPage extends Component {
   }
 }
 
-export default ConfirmPage;
+export default FinalJoinPage;

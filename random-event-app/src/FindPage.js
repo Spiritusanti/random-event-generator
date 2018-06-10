@@ -71,11 +71,18 @@ class FindPage extends Component {
     return (
         <div className="App">
             <Header />
-        <div class="ui container">
-          <div id='spacer' />
-          {this.renderEvent(this.state.currentEvent)}
-        </div>
-      </div>
+            <div id='spacer' />
+
+            <div class="ui container">
+            
+              <div class="ui two column centered grid">
+                <div class="column">
+                <div class="ui left aligned huge header">Your Result</div>
+                  {this.renderEvent(this.state.currentEvent)}
+                </div>
+              </div>
+            </div>
+          </div>
     );
   }
 }
