@@ -29,8 +29,10 @@ class LandingPage extends Component {
             <Header />
         <div class="container">
           <div id='spacer' />
-            <h1>Local Event Finder</h1>
-            <p>Discover great local events going on right now!</p>
+            <h1 class="ui huge landing header">
+              Seattle Kids
+            <div class="sub header">Find new friends and have fun!</div>
+            </h1>
 
                 <div className="ui buttons">
                   <button  className="ui purple button" onClick={this.find}>Find Event</button>

@@ -12,7 +12,7 @@ class ConfirmPage extends Component {
         <div class="ui container">
           <div id='spacer' />
           <h1>Event Added!</h1>
-          <a href='/'>Return to Home</a>
+          <a class="ui purple button" href='/'>Return Home</a>
         </div>
       </div>
     );

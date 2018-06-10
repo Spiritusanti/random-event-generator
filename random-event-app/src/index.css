@@ -9,6 +9,12 @@ body {
   height: 100%;
 }
 
+.ui.top.fixed.borderless.menu{
+  font-size: 1.2em;
+}
+.ui.huge.landing.header {
+  font-size: 4em;
+}
 #root {
   height: 100%;
 }
