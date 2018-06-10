@@ -14,37 +14,37 @@ class FindPage extends Component {
       /** "event1": **/{
         "name" : "Strawberry Festival",
         "Tags" : ["family friendly", "outdoor"],
-        "Date-Time": ["May 24th 2018, 130pm"],
-        "Attendees": ["Lin", "Child_1", "Child_2", "George", "Child_3"],
-        "Location": "Marysville WA"
+        "DateTime": "May 24th 2018 1:30pm",
+        "Attendees": "2",
+        "Location": "Marysville, WA"
       },
         /**"event2": **/{
         "name": "Swimming Lessons",
         "Tags": ["family friendly", "indoor", "$5"],
-        "Date-Time": ["June 6th 2018, 3pm"],
-        "Attendees": ["Lin", "Child_1", "Child_2", "Darcy", "Child_3", "child_4"],
+        "DateTime": "June 6th 2018 3:00pm",
+        "Attendees": "1",
         "Location": "Seattle YMCA"
       },
         /**event3: **/{
         "name": "Tennis",
         "Tags":["family friendly", "instructor available", "outdoor", "lunch"],
-        "Date-Time": ["June 12th 2018, 1130am"],
-        "Attendees": ["Lin", "Child_1", "Child_2", "George", "Darcy", "Child_3", "child_4"],
+        "DateTime": "June 12th 2018 11:30am",
+        "Attendees": "2",
         "Location": "Discovery Park"
       },
       /**event4: **/{
         "name": "Steam Train",
         "Tags": ["family friendly", "$25", "thomas the train engine", "outdoor", "lunch"],
-        "Date-Time": ["July 1st 2018, 10am"],
-        "Attendees":["Lin", "Child_1", "Child_2", "George", "Darcy", "Child_3", "child_4"],
-        "Location": "Snoqualimie wa"
+        "DateTime": "July 1st 2018 10:00am",
+        "Attendees": "5",
+        "Location": "Snoqualimie, WA"
       },
       /**event5: **/{
         "name": "Seattle Art Museum",
         "Tags": ["family friendly", "free", "art", "culture"],
-        "Date-Time": "June 7th 2018, 130pm",
-        "Attendees": ["Lin", "Child_1", "child_4"],
-        "Location": "Seattle WA"
+        "DateTime": "June 7th 2018 1:30pm",
+        "Attendees": "3",
+        "Location": "Seattle, WA"
       }
     ]
     }
@@ -61,7 +61,7 @@ class FindPage extends Component {
   }
   renderEvent(i){
     return(
-          <Event handler={this.incrementEvent} eventName={this.state.currentEvents[i].name} eventLocation={this.state.currentEvents[i].Location} tags={this.state.currentEvents[i].Tags}/>
+          <Event handler={this.incrementEvent} eventName={this.state.currentEvents[i].name} eventLocation={this.state.currentEvents[i].Location} tags={this.state.currentEvents[i].Tags} eventDate={this.state.currentEvents[i].DateTime} eventAttendees={this.state.currentEvents[i].Attendees}/>
     )
   }
 

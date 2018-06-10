@@ -33,7 +33,7 @@ class Event extends Component{
                     eventLocation: nextProps.eventLocation,
                     eventDate: nextProps.eventDate,
                     eventAttendees: nextProps.eventAttendees,
-                    tags: nextProps.tags 
+                    tags: nextProps.tags
                   });
   }
 
@@ -46,7 +46,7 @@ class Event extends Component{
             <div className="w3-container w3-Left">
               <h1>{this.state.eventName}</h1>
               <h3>{this.state.eventLocation}</h3>
-              <p>Description: Some description of this activity</p>
+              <h3>{this.state.eventDate}</h3>
               <div className="w3-container">
 
                 <div className="w3-row">
