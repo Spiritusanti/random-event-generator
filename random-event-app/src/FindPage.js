@@ -10,37 +10,37 @@ class FindPage extends Component {
     super(props);
     this.incrementEvent = this.incrementEvent.bind(this);
     this.state = {
-      currentEvent: 1,
+      currentEvent: 0,
       currentEvents: [
-      /** "event1": **/{
-        "name" : "Strawberry Festival",
-        "Tags" : ["family friendly", "outdoor"],
-        "DateTime": "May 24th 2018 1:30pm",
-        "Attendees": "2",
-        "Location": "Marysville, WA"
+      {
+        "name" : "Soccer Pickup Game",
+      "Tags" : ["soccer", "sports", "outdoor", "new friends"],
+      "DateTime": "July 16th 2018 1:30pm",
+      "Attendees": "2",
+      "Location": "Emory Field | Kirkland, WA"
       },
-        /**"event2": **/{
-        "name": "Swimming Lessons",
-        "Tags": ["family friendly", "indoor", "$5"],
-        "DateTime": "June 6th 2018 3:00pm",
-        "Attendees": "1",
-        "Location": "Seattle YMCA"
+      {
+        "name" : "Kids day @ Sounders",
+      "Tags" : ["soccer", "sports", "event", "family", "outdoor"],
+      "DateTime": "July 18th 2018 1:30pm",
+      "Attendees": "8",
+      "Location": "CenturyLink Field | Seattle, WA"
       },
-        /**event3: **/{
+      {
         "name": "Tennis",
         "Tags":["family friendly", "instructor available", "outdoor", "lunch"],
         "DateTime": "June 12th 2018 11:30am",
         "Attendees": "2",
         "Location": "Discovery Park"
       },
-      /**event4: **/{
+      {
         "name": "Steam Train",
         "Tags": ["family friendly", "$25", "thomas the train engine", "outdoor", "lunch"],
         "DateTime": "July 1st 2018 10:00am",
         "Attendees": "5",
         "Location": "Snoqualimie, WA"
       },
-      /**event5: **/{
+      {
         "name": "Seattle Art Museum",
         "Tags": ["family friendly", "free", "art", "culture"],
         "DateTime": "June 7th 2018 1:30pm",
