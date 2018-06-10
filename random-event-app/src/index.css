@@ -32,3 +32,12 @@ body {
   min-height: 50px;
   font-size: x-large;
 }
+
+#btnAdd {
+  width: 50%;
+  height: 10%;
+  min-height: 50px;
+  font-size: x-large;
+  margin-top: 20px;
+  /* background-color: magenta; */
+}
