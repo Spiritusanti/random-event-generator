@@ -28,6 +28,14 @@ class Event extends Component{
       tags: props.tags
     }
   }
+  componentWillReceiveProps(nextProps) {
+    this.setState({ eventName: nextProps.eventName,
+                    eventLocation: nextProps.eventLocation,
+                    eventDate: nextProps.eventDate,
+                    eventAttendees: nextProps.eventAttendees,
+                    tags: nextProps.tags 
+                  });
+  }
 
   render(){
     return(
@@ -53,7 +61,7 @@ class Event extends Component{
               </div>
               <div className="w3-row w3-padding">
                 <div className="w3-container w3-half">
-                  <button className="w3-button w3-block w3-red">Find Another</button>
+                  <button className="w3-button w3-block w3-red" onClick={this.props.handler}>Find Another</button>
                 </div>
                 <div className="w3-container w3-half">
                   <button className="w3-button w3-block w3-green">Join</button>
