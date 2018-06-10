@@ -27,22 +27,22 @@ class FindPage extends Component {
       "Location": "CenturyLink Field | Seattle, WA"
       },
       {
-        "name": "Tennis",
-        "Tags":["family friendly", "instructor available", "outdoor", "lunch"],
+        "name": "Tennis & Lunch",
+        "Tags":["family friendly", "instructor", "outdoor", "lunch"],
         "DateTime": "June 12th 2018 11:30am",
         "Attendees": "2",
         "Location": "Discovery Park"
       },
       {
         "name": "Steam Train",
-        "Tags": ["family friendly", "$25", "thomas the train engine", "outdoor", "lunch"],
+        "Tags": ["family friendly", "$25", "trains", "outdoor", "lunch"],
         "DateTime": "July 1st 2018 10:00am",
         "Attendees": "5",
         "Location": "Snoqualimie, WA"
       },
       {
         "name": "Seattle Art Museum",
-        "Tags": ["family friendly", "free", "art", "culture"],
+        "Tags": ["family friendly", "free", "art", "culture", "museum"],
         "DateTime": "June 7th 2018 1:30pm",
         "Attendees": "3",
         "Location": "Seattle, WA"
