@@ -7,6 +7,7 @@ class FindPage extends Component {
 
   constructor(props){
     super(props);
+    this.incrementEvent = this.incrementEvent.bind(this);
     this.state = {
       currentEvent: 1,
       currentEvents: [
@@ -49,9 +50,18 @@ class FindPage extends Component {
     }
   }
 
+  incrementEvent(e){
+    e.preventDefault();
+    this.forceUpdate();
+
+    this.setState({
+      currentEvent: (this.state.currentEvent + 1) % 4
+    })
+    console.log(this.state.currentEvent);
+  }
   renderEvent(i){
     return(
-          <Event eventName={this.state.currentEvents[i].name} eventLocation={this.state.currentEvents[i].Location} tags={this.state.currentEvents[i].Tags}/>
+          <Event handler={this.incrementEvent} eventName={this.state.currentEvents[i].name} eventLocation={this.state.currentEvents[i].Location} tags={this.state.currentEvents[i].Tags}/>
     )
   }
 
@@ -61,7 +71,6 @@ class FindPage extends Component {
       <div className="App">
         <div class="w3-container">
           <div id='spacer' />
-          <h1>Find Page</h1>
           {this.renderEvent(this.state.currentEvent)}
         </div>
       </div>
