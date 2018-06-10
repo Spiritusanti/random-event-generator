@@ -28,6 +28,8 @@ class Event extends Component{
       tags: props.tags
     }
   }
+
+  
   render(){
     return(
       <div className="w3-row w3-padding">
@@ -72,4 +74,4 @@ class Event extends Component{
 
 
 
-export default EventApp;
+export default Event;
