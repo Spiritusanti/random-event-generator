@@ -17,66 +17,65 @@ class EventApp extends Component {
   }
 }*/
 
-class Event extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      eventName: props.eventName,
-      eventLocation: props.eventLocation,
-      eventDate: props.eventDate,
-      eventAttendees: props.eventAttendees,
-      tags: props.tags
+class Event extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            eventName: props.eventName,
+            eventLocation: props.eventLocation,
+            eventDate: props.eventDate,
+            eventAttendees: props.eventAttendees,
+            tags: props.tags
+        }
     }
-  }
-  componentWillReceiveProps(nextProps) {
-    this.setState({ eventName: nextProps.eventName,
-                    eventLocation: nextProps.eventLocation,
-                    eventDate: nextProps.eventDate,
-                    eventAttendees: nextProps.eventAttendees,
-                    tags: nextProps.tags
-                  });
-  }
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            eventName: nextProps.eventName,
+            eventLocation: nextProps.eventLocation,
+            eventDate: nextProps.eventDate,
+            eventAttendees: nextProps.eventAttendees,
+            tags: nextProps.tags
+        });
+    }
 
-  render(){
-    return(
-      <div className="w3-row w3-padding">
-        <div className="w3-container w3-quarter"></div>
-        <div className="w3-container w3-half">
-          <div className="w3-card">
-            <div className="w3-container w3-Left">
-              <h1>{this.state.eventName}</h1>
-              <h3>{this.state.eventLocation}</h3>
-              <h3>{this.state.eventDate}</h3>
-              <div className="w3-container">
+    render() {
+        return (
+            <div className="ui centered cards">
+                <div class="ui fluid card">
+                    <div class="content">
+                        <div class="ui dividing left aligned huge header">{this.state.eventName}</div>
+                        <div class="meta">
+                            Location: {this.state.eventLocation}
+                            <br/>
+                            Date: {this.state.eventDate}
+                        </div>
+                        <div class="ui left aligned description">
+                            <div class="ui horizontal list">
+                                <div class="item">Tags: </div>
+                                <div class="item">
+                            <div class="ui blue labels">
+                                {this.state.tags.map((answer, i) => {
+                                console.log("Entered");
+                                return <a className="ui label">{answer}</a>
 
-                <div className="w3-row">
-                  <p>Tags:
-                  {this.state.tags.map((answer, i) => {
-                    console.log("Entered");
-                    return <span className="w3-tag">{answer}</span>
+                                })}
 
-                  })}
-                  </p>
+                            </div>
+                            </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui two buttons">
+                            <button class="ui basic green button" >Join</button>
+                            <button class="ui basic red button" onClick={this.props.handler}>Find Another</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div className="w3-row w3-padding">
-                <div className="w3-container w3-half">
-                  <button className="w3-button w3-block w3-red" onClick={this.props.handler}>Find Another</button>
-                </div>
-                <div className="w3-container w3-half">
-                  <button className="w3-button w3-block w3-green">Join</button>
-                </div>
-              </div>
             </div>
 
-
-          </div>
-        </div>
-        <div className="w3-container w3-quarter"></div>
-
-      </div>
-    )
-  }
+        )
+    }
 }
 
 

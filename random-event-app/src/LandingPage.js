@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 class LandingPage extends Component {
 	constructor(props) {
@@ -24,14 +25,18 @@ class LandingPage extends Component {
   render() {
   
     return (
-      <div className="App">
-        <div class="w3-container">
+        <div className="App">
+            <Header />
+        <div class="container">
           <div id='spacer' />
-          <h1>Local Event Finder</h1>
-          <p>Discover great local events going on right now!</p>
-          <button id='btnFind' className="w3-btn w3-purple" onClick={this.find}>Find Event</button>
-          <br />
-          <button id='btnAdd' className="w3-btn w3-lime" onClick={this.add}>Add Event</button>        
+            <h1>Local Event Finder</h1>
+            <p>Discover great local events going on right now!</p>
+
+                <div className="ui buttons">
+                  <button  className="ui purple button" onClick={this.find}>Find Event</button>
+                  <div class="or"></div>
+                  <button className="ui positive button" onClick={this.add}>Add Event</button>        
+                </div>
         </div>
       </div>
     );

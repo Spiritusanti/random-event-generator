@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Event from './event'
+import Event from './event';
+import Header from './Header';
 
 class FindPage extends Component {
 
@@ -68,8 +69,9 @@ class FindPage extends Component {
   render() {
 
     return (
-      <div className="App">
-        <div class="w3-container">
+        <div className="App">
+            <Header />
+        <div class="ui container">
           <div id='spacer' />
           {this.renderEvent(this.state.currentEvent)}
         </div>
