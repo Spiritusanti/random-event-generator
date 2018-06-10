@@ -29,7 +29,6 @@ class Event extends Component{
     }
   }
 
-  
   render(){
     return(
       <div className="w3-row w3-padding">
